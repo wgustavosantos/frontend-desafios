@@ -107,13 +107,16 @@ p, h2 {
 
 .card__continue {
     background-color: var(--botao-cinza-azul);
-    padding: 1em 0;
+    border: none;
+    padding: 1.5em 0;
     text-align: center;
-    border-radius: 24px;
+    border-radius: 30px;
+    width: 100%;
 }
 
 .card__continue p {
     color: var(--branco);
+    font-size: 1.4em;
 }
 
 .summary__reaction {
@@ -146,4 +149,36 @@ p, h2 {
 
 .summary__card-visual {
     background-color: var(--card-visual-transparente);
+}
+
+.card__continue:hover {
+    cursor: pointer;
+    background: var(--summary-degrade);
+}
+
+@media screen and (min-width: 1365px){
+    .card {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .result {
+        border-radius: 40px;
+        width: 25%;
+        padding: 2em 0;
+    }
+
+    .result > h3 {
+        font-size: 1em;
+    }
+
+    .result__texto {
+        width: 60%;
+    }
+
+    .summary {
+        width: 24vw;
+    }
+
 }
